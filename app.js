@@ -15,10 +15,9 @@ window.addEventListener("load", () => {
       lat = position.coords.latitude;
       long = position.coords.longitude;
 
-      //const proxy = "https://cors-anywhere.herokuapp.com/";
-      //const api = `${proxy}https://api.darksky.net/forecast/7e4b52da32d60e9a93215645f33d6cad/${lat},${long}`;
-      const api = `https://api.darksky.net/forecast/7e4b52da32d60e9a93215645f33d6cad/${lat},${long}`;
-      
+      const proxy = "https://cors-anywhere.herokuapp.com/";
+      const api = `${proxy}https://api.darksky.net/forecast/7e4b52da32d60e9a93215645f33d6cad/${lat},${long}`;
+
       // Retrieve info from our api
       fetch(api)
         .then(response => {
@@ -32,6 +31,7 @@ window.addEventListener("load", () => {
           weatherDesc.textContent = summary;
           locationTimeZone.textContent = data.timezone;
           dailyDesc.textContent = data.daily.summary;
+          tempSpan.textContent = "°F";
 
           // Set icon
           setIcons(icon, document.querySelector(".icon"));
