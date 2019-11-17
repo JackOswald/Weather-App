@@ -1,6 +1,6 @@
 # Weather App
 
-An application which shows the current weather for your current location. This app was created using HTML, CSS and JS. 
+An application which shows the current weather and your timezone location. This app was created using HTML, CSS and JS. 
 
 # How To Run
 
