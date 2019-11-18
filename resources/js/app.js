@@ -11,6 +11,7 @@ window.addEventListener("load", () => {
   // Retrieve lat and long coords
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(position => {
+      console.log(position);
       lat = position.coords.latitude;
       long = position.coords.longitude;
 
@@ -23,6 +24,7 @@ window.addEventListener("load", () => {
           return response.json();
         })
         .then(data => {
+          console.log(data);
           const { temperature, summary, icon } = data.currently;
 
           // Set text to retrieved data
