@@ -9,3 +9,7 @@ Visit https://jackoswaldweatherapp.netlify.com/ and allow access to your current
 # How To Use
 
 Click on the temperature to change between fahrenheit and celsius.
+
+# Screenshots
+
+<img src="images/App%20Image%201.png" height="500"> <img src="images/App%20Image%202.png" height="500">
